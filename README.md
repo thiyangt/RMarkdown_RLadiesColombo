@@ -1,7 +1,11 @@
 # RLadies Colombo Workshop Materials
 
-## Date: December 28, 2020
+Date: December 28, 2020
 
-## Time: 5.00pm - 6.30pm
+Time: 5.00pm - 6.30pm
 
-## Venue Online
+Venue: Online
+
+Link to the meetup: https://www.meetup.com/rladies-colombo/events/275260700/
+
+![](1_rmarkdown.jpg)
