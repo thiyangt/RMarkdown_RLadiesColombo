@@ -1,0 +1,21 @@
+---
+title: "Include Latex codes"
+author: "Thiyanga Talagala"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# 1. Latex table
+
+\begin{table}[!h]
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+ & \multicolumn{2}{l|}{Topic 1} & Topic 2 & Topic 3 \\ \hline
+ &     1      &     h1      & r1 & positive \\ \hline
+ &     2      &     h2     & r2 &  positive\\ \hline
+ &     3      &     h3     & r3 &  negative\\ \hline
+\end{tabular}
+\end{table}

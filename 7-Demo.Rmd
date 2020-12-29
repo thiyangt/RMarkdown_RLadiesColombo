@@ -1,0 +1,42 @@
+---
+title: "Style guide to R Markdown: theme"
+author: "Thiyanga Talagala"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    number_sections: true
+    theme: darkly
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Data Visualization
+
+Data visualization is the graphical representation of information and data. This is important because it allows relationships of the data, trends and patterns to be more easily seen.
+
+##  Data Description: `iris`
+
+The Iris flower data set (also known as Fisher’s Iris data set) is a multivariate data set introduced by the British statistician, eugenicist, and biologist Ronald Fisher.
+
+```{r, fig.height=3} 
+library(ggplot2)
+ggplot(iris, aes(x=Sepal.Length, y=Sepal.Width, colour=Species)) + 
+  geom_point() +  coord_fixed(ratio=1.7) + scale_color_brewer(palette = "Dark2")
+```
+
+### Scatter plot
+
+A scatter plot (aka scatter chart, scatter graph) uses dots to represent values for two different numeric variables.
+
+# Statistical modelling
+
+Major resource for statistical modelling
+
+- broom
+
+- tidyverse/ modelr
+
+

@@ -1,0 +1,49 @@
+---
+title: "Use Python in R Markdown"
+author: "Thiyanga Talagala"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Load `reticulate` package
+
+```{r, comment=NA}
+library(reticulate)
+```
+
+## Python chunk
+
+```{python}
+# List of numbers
+numbers = [1, 2, 3, 4, 5]
+# variable to store the sum
+sum = 0
+# iterate over the list
+for val in numbers:
+	sum = sum+val
+
+print("The sum is", sum)
+
+```
+
+
+## Access the Python variable from R
+
+```{r}
+py$numbers
+```
+
+## Create a Python array from R
+
+```{r}
+py$a = 1:10 
+```
+
+Now `a` is available in Python.
+
+```{python}
+a
+```

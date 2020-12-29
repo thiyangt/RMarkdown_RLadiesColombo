@@ -1,0 +1,12 @@
+---
+title: "Include an image"
+author: "Thiyanga Talagala"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+![](RobertandRoss.jpg)
+

@@ -1,0 +1,31 @@
+---
+title: "Chunk options: eval"
+author: "Thiyanga Talagala"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Figure 1
+
+```{r, eval=TRUE} 
+library(ggplot2)
+ggplot(iris, aes(x=Sepal.Length, y=Sepal.Width, colour=Species)) + 
+  geom_point() + 
+  coord_fixed(ratio=1.7) + 
+  scale_color_brewer(palette = "Dark2")
+```
+
+
+# Figure 2
+
+```{r, eval=FALSE} 
+library(ggplot2)
+ggplot(iris, aes(y=Sepal.Width, fill=Species)) + 
+  geom_boxplot() + 
+  scale_fill_brewer(palette = "Dark2")
+```
+
+

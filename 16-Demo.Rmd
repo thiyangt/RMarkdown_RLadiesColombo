@@ -1,0 +1,24 @@
+---
+title: "Parameterized R Markdown"
+author: "Thiyanga Talagala"
+output: html_document
+params:
+  group: 1
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Report for `r params$group`
+
+```{r, comment=NA}
+library(readr)
+doc <- params$group
+doc
+doc.name <- paste0("group_",doc,".csv")
+doc.name
+data <- read_csv(doc.name)
+data
+summary(data)
+```

@@ -1,0 +1,26 @@
+---
+title: "Document your Analysis"
+author: "Thiyanga Talagala"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::read_chunk("11-Demo.R")
+```
+
+# 1. Data Visualization
+
+Data visualization is the graphical representation of information and data. This is important because it allows relationships of the data, trends and patterns to be more easily seen.
+
+```{r, load-packages}
+
+```
+
+```{r, data}
+
+```
+
+```{r, randomnumbers}
+rnorm(100)
+```
